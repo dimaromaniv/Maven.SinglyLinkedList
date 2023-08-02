@@ -110,6 +110,15 @@ public class SinglyLinkedListTest {
         Assert.assertEquals(list.size()-1, list.find(5));
     }
 
+    @Test
+    public void testHasContains() {
+        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+
+        list.add(5);
+
+        Assert.assertEquals(list.contains(5),list.contains(5));
+    }
+
 
 
 }
