@@ -16,7 +16,7 @@ public class Node <T>{
     }
 
     public T getDate () {return data;}
-    //public T getNext () {return  next.data;}
+
     public void setNext (Node newNode ) {
         this.next = newNode;
 

@@ -85,4 +85,31 @@ public class SinglyLinkedListTest {
         list.add(3);
         Assert.assertEquals(3,list.size());
     }
+    @Test
+    public void testHasFind() {
+        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+
+        Assert.assertEquals(-1, list.find(1));
+    }
+
+    @Test
+    public void testHasFind1() {
+        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+        list .add(4);
+        list.add(5);
+        list.add(3);
+
+        Assert.assertEquals(1, list.find(5));
+    }
+    @Test
+    public void testHasFind2() {
+        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+
+        list.add(5);
+
+        Assert.assertEquals(list.size()-1, list.find(5));
+    }
+
+
+
 }
